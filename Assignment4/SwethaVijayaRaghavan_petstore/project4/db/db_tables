@@ -1,0 +1,48 @@
+
+ create table roles(
+    roleId int NOT NULL AUTO_INCREMENT,
+    description varchar(50) NOT NULL,
+    PRIMARY KEY (roleId)
+
+);
+CREATE TABLE Users(
+    userId int(15) NOT NULL AUTO_INCREMENT,
+    email varchar(50) NOT NULL,
+    password varchar(50) NOT NULL,
+    roleId int ,
+    PRIMARY KEY (userId),
+    FOREIGN KEY (roleId) REFERENCES roles(roleId)
+    )ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ CREATE TABLE contactUs (
+    contactId int(30) NOT NULL AUTO_INCREMENT,
+    fname varchar(50) NOT NULL ,
+    lname varchar(50) NOT NULL,
+    email varchar(50) NOT NULL,
+    phone int(20) DEFAULT NULL,
+    comments varchar(100) NOT NULL,
+    PRIMARY KEY (contactId)
+    )ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+    CREATE TABLE client (
+    clientId int(15) NOT NULL AUTO_INCREMENT,
+    fname varchar(50) NOT NULL ,
+    lname varchar(50) NOT NULL,
+    email varchar(50) NOT NULL,
+    phone varchar(20) DEFAULT NULL,
+    userId int(15),
+    PRIMARY KEY (clientId),
+    FOREIGN KEY (userId) REFERENCES Users(userId)
+    )ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+    CREATE TABLE service (
+    serviceId int(15) NOT NULL AUTO_INCREMENT,
+    fname varchar(50) NOT NULL ,
+    lname varchar(50) NOT NULL,
+    email varchar(50) NOT NULL,
+    phone varchar(20) DEFAULT NULL,
+    userId int(15),
+    PRIMARY KEY (serviceId),
+    FOREIGN KEY (userId) REFERENCES Users(userId)
+    )ENGINE=InnoDB DEFAULT CHARSET=utf8;

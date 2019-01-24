@@ -1,0 +1,158 @@
+/*Name- Swetha Vijaya Raghavan
+	ID- 1001551229
+	NetID- sxv1229
+	Course- CSE 5335-004 */
+
+h1 {
+	margin:0;
+	padding: 0;
+	padding-left: 20px;
+	background-color: #000033;
+	line-height: 200%;
+	background-size: 100% 100%;
+	color: #FFFFFF;
+	font-family: Georgia,serif;
+}
+
+#background {
+	background: #FFFFFF;
+}
+
+#wrapper {
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		box-shadow: 5px 5px;
+		background: #FFFFFF;
+	}
+
+#container {
+		display: flex;
+	}
+
+#column1 {
+	    background: #90C7E3;
+		vertical-align: top;
+		width: 80%;
+		font-family:Verdana, Arial, serif;
+	}
+
+nav {
+	float: left;
+	background: #90C7E3;
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+  	margin: 0;
+	padding: 20px;
+	color: #666666;
+	font-family:Verdana, Arial, serif;
+}
+
+ul li a {
+	text-decoration: none;
+	color:#154360;
+	font-family:Verdana, Arial, serif;
+}
+
+#column2 {
+	width: 400%;
+	font-family:Verdana, Arial, serif;
+
+}
+
+h2 {
+	color: #3399CC;
+	font-family: "Georgia ,serif";
+}
+
+section {
+	padding-left: 	30px;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding-left: 0px;
+}
+
+address {
+	font-style: normal;
+	color: #666666;
+}
+
+p {
+	display: table-row;
+	padding-left: 30px;
+	color: #666666;
+	font-family: Verdana;
+}
+
+footer {
+	font-size: .70em;
+	text-align : center;
+	font-style: italic;
+	padding-top: 10px;
+	color: #666666;
+	font-family:Verdana, Arial, serif;
+}
+
+form {
+	display: table;
+}
+
+label {
+	display: table-cell;
+	position: relative;
+}
+
+input[type=text] {
+		width : 200px;
+		height :15px;
+		margin-left: 100px;
+		margin-bottom: 5px;
+}
+
+input[type=textarea] {
+		width : 250px;
+		height :60px;
+		margin-left: 100px;
+		margin-bottom: 5px;
+}
+
+input[type=submit] {
+    padding:5px 5px 5px 5px 25px;
+		height: 20px;
+		width: 50px;
+		margin-left: 2px;
+		border-color: black;
+		border: 1px solid;
+		text-decoration: none;
+		background-color: #D3D3D3;
+}
+tel{
+	color: #666666;
+}
+
+.comments {
+	position: relative;
+	bottom: 20px;
+}
+
+#Lists {
+	list-style-type: disc;
+	padding-left: 60px;
+}
+td{
+	padding-right: 80px;
+}
+@media only screen and (max-device-width: 639px)
+{
+	body
+	{
+		font-size: 11px;
+	}	
+}
